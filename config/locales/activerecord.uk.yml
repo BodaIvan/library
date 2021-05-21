@@ -1,0 +1,10 @@
+uk:
+  activerecord:
+    models:
+      post: "Стаття"
+    attributes:
+        post:
+          title: "Заголовок"
+          summary: "Короткий опис"
+          body: "Зміст статті"
+      

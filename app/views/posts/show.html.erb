@@ -1,0 +1,15 @@
+<article class="post">
+    <section class="post-head">
+        <h2> <%= @post.title%></h2>
+         <small>
+             <time> <%=@post.created_at.to_date.strftime("%d %B %Y")%></time>
+            <%=link_to 'Change', edit_post_path(@post)%>
+             <%=link_to 'Delete', post_path(@post), method: :delete, data: { confirm: 'Are you shure'}%>
+        </small>
+    </section>  
+    <section class="post-body">
+        <%= image_tag @post.image.url(:large), class: 'img-show' if @post.image? %>
+      <%=@post.body%>
+    </section>
+</article>
+
