@@ -10,8 +10,10 @@ gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 gem 'carrierwave', '~> 2.0'
+#gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 gem "mini_magick"
-gem 'trix-rails', require: 'trix'
+#gem 'trix-rails', require: 'trix'
+gem 'trix'
 gem 'rails-i18n', '~> 6.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'

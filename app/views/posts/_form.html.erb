@@ -19,7 +19,7 @@
     </div>
     <div class="form-group">
         <%= f.label :body %>
-        <%= f.trix_editor :body, required: true, autofocus: true, class: 'editor' %>
+        <%= f.rich_text_area :body, required: true, autofocus: true, class: 'editor' %>
     </div>
     <div class="form-group">
         <%= f.file_field :image %>
